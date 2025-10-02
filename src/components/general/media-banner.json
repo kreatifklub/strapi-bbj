@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_general_media_banners",
+  "info": {
+    "displayName": "Media Banner",
+    "icon": "brush"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    }
+  },
+  "config": {}
+}

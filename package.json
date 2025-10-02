@@ -15,13 +15,20 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
-    "@strapi/provider-upload-local": "5.18.1",
+    "@_sh/strapi-plugin-ckeditor": "^6.0.2",
+    "@strapi/plugin-color-picker": "^5.23.0",
+    "@strapi/plugin-graphql": "^5.23.0",
+    "@strapi/plugin-seo": "^2.0.8",
     "@strapi/plugin-users-permissions": "5.18.1",
+    "@strapi/provider-upload-local": "5.18.1",
     "@strapi/strapi": "5.18.1",
     "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "slugify": "^1.6.6",
+    "strapi-plugin-multi-select": "^2.1.1",
+    "strapi-plugin-navigation": "^3.2.4",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {},
@@ -31,5 +38,6 @@
   },
   "strapi": {
     "uuid": "ae97edc3-b9a5-4000-bd34-43b102ca9a04"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }

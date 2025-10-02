@@ -4,6 +4,9 @@ module.exports = ({ env }) => ({
       jwtSecret: env("JWT_SECRET"),
     },
   },
+  seo: {
+    enabled: true,
+  },
   upload: {
     config: {
       provider: "local",
