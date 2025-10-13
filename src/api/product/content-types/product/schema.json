@@ -75,6 +75,12 @@
       "type": "component",
       "component": "shared.open-graph",
       "repeatable": true
+    },
+    "collection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::collection.collection",
+      "inversedBy": "products"
     }
   }
 }

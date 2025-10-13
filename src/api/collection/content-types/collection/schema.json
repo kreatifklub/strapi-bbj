@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "product_collections",
+  "collectionName": "collections",
   "info": {
-    "singularName": "product-collection",
-    "pluralName": "product-collections",
-    "displayName": "Product Collection"
+    "singularName": "collection",
+    "pluralName": "collections",
+    "displayName": "Collection"
   },
   "options": {
     "draftAndPublish": true
@@ -13,8 +13,7 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
     "systemId": {
       "type": "string",
@@ -34,12 +33,18 @@
     "seo": {
       "type": "component",
       "component": "shared.seo",
-      "repeatable": true
+      "repeatable": false
     },
     "open_graph": {
       "type": "component",
       "component": "shared.open-graph",
-      "repeatable": true
+      "repeatable": false
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "collection"
     }
   }
 }
