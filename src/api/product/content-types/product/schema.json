@@ -71,11 +71,6 @@
       "component": "shared.seo",
       "repeatable": false
     },
-    "open_graph": {
-      "type": "component",
-      "component": "shared.open-graph",
-      "repeatable": true
-    },
     "collection": {
       "type": "relation",
       "relation": "manyToOne",
