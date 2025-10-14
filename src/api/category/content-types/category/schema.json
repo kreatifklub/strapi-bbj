@@ -58,6 +58,11 @@
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "category"
+    },
+    "tiles": {
+      "type": "component",
+      "component": "category.card-tile",
+      "repeatable": true
     }
   }
 }

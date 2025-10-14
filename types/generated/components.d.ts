@@ -14,24 +14,6 @@ export interface CategoryCardTile extends Struct.ComponentSchema {
   };
 }
 
-export interface CategoryCategoryTiles extends Struct.ComponentSchema {
-  collectionName: 'components_category_category_tiles';
-  info: {
-    displayName: 'Category Tiles';
-    icon: 'brush';
-  };
-  attributes: {
-    Tiles: Schema.Attribute.Component<'category.card-tile', true> &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetMinMax<
-        {
-          max: 2;
-        },
-        number
-      >;
-  };
-}
-
 export interface GeneralCollectionBanner extends Struct.ComponentSchema {
   collectionName: 'components_general_collection_banners';
   info: {
@@ -143,7 +125,6 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'category.card-tile': CategoryCardTile;
-      'category.category-tiles': CategoryCategoryTiles;
       'general.collection-banner': GeneralCollectionBanner;
       'general.hero': GeneralHero;
       'general.media-banner': GeneralMediaBanner;
