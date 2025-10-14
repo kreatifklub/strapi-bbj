@@ -41,6 +41,13 @@
         "images"
       ]
     },
+    "product_gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "seo": {
       "type": "component",
       "component": "shared.seo",

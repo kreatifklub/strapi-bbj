@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_category_card_tiles",
+  "info": {
+    "displayName": "Card - Tile",
+    "icon": "brush"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  },
+  "config": {}
+}

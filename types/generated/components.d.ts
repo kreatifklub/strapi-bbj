@@ -1,5 +1,37 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface CategoryCardTile extends Struct.ComponentSchema {
+  collectionName: 'components_category_card_tiles';
+  info: {
+    displayName: 'Card - Tile';
+    icon: 'brush';
+  };
+  attributes: {
+    headline: Schema.Attribute.String;
+    label: Schema.Attribute.String;
+    link: Schema.Attribute.Relation<'oneToOne', 'api::category.category'>;
+    media: Schema.Attribute.Media<'images'>;
+  };
+}
+
+export interface CategoryCategoryTiles extends Struct.ComponentSchema {
+  collectionName: 'components_category_category_tiles';
+  info: {
+    displayName: 'Category Tiles';
+    icon: 'brush';
+  };
+  attributes: {
+    Tiles: Schema.Attribute.Component<'category.card-tile', true> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 2;
+        },
+        number
+      >;
+  };
+}
+
 export interface GeneralCollectionBanner extends Struct.ComponentSchema {
   collectionName: 'components_general_collection_banners';
   info: {
@@ -110,6 +142,8 @@ export interface SharedSeo extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'category.card-tile': CategoryCardTile;
+      'category.category-tiles': CategoryCategoryTiles;
       'general.collection-banner': GeneralCollectionBanner;
       'general.hero': GeneralHero;
       'general.media-banner': GeneralMediaBanner;
