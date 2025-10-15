@@ -2027,6 +2027,14 @@
     hls.js "~1.5.11"
     mux-embed "^5.3.1"
 
+"@nexide/strapi-provider-bunny@^1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@nexide/strapi-provider-bunny/-/strapi-provider-bunny-1.3.5.tgz#b0977fc48de34be21d182bf14181d990380118ce"
+  integrity sha512-zNioHgEW5oFudyKjVVKFwMwzIaYzaGnUasr1+XaCcKtFD4PFMugOU0tEKBb33aUGc5OAbMOj7ONu46mnQRqD4Q==
+  dependencies:
+    "@strapi/utils" "^5.x.x"
+    axios "^0.21.1"
+
 "@noble/hashes@^1.1.5":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.7.1.tgz#5738f6d765710921e7a751e00c20ae091ed8db0f"
@@ -3668,6 +3676,22 @@
     yup "0.32.9"
     zod "3.25.67"
 
+"@strapi/utils@^5.x.x":
+  version "5.27.0"
+  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-5.27.0.tgz#c8c544ecc90e9dbd48f27c96f872bf4dafa71c63"
+  integrity sha512-2FHnRw2v09UP68CBLp4fauneoaTbfLnbl+YOoPOBPK34Q28HEhKuoLEV25S3TlZP3QsvN9wr9IhJqbxtDG7PNA==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    date-fns "2.30.0"
+    execa "5.1.1"
+    http-errors "2.0.0"
+    lodash "4.17.21"
+    node-machine-id "1.1.12"
+    p-map "4.0.0"
+    preferred-pm "3.1.2"
+    yup "0.32.9"
+    zod "3.25.67"
+
 "@swc/core-darwin-arm64@1.11.8":
   version "1.11.8"
   resolved "https://registry.yarnpkg.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.11.8.tgz#46e49bae73f0a11b62518184b715a3ab0230006b"
@@ -4713,6 +4737,13 @@ axios@1.8.4:
     follow-redirects "^1.15.6"
     form-data "^4.0.0"
     proxy-from-env "^1.1.0"
+
+axios@^0.21.1:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
+  dependencies:
+    follow-redirects "^1.14.0"
 
 babel-plugin-macros@^3.1.0:
   version "3.1.0"
@@ -6543,6 +6574,11 @@ fn.name@1.x.x:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/fn.name/-/fn.name-1.1.0.tgz#26cad8017967aea8731bc42961d04a3d5988accc"
   integrity sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw==
+
+follow-redirects@^1.14.0:
+  version "1.15.11"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.11.tgz#777d73d72a92f8ec4d2e410eb47352a56b8e8340"
+  integrity sha512-deG2P0JfjrTxl50XGCDyfI97ZGVCxIpfKYmfyrQ54n5FO/0gfIES8C/Psl6kWVDolizcaaxZJnTS0QSMxvnsBQ==
 
 follow-redirects@^1.15.6, follow-redirects@^1.15.9:
   version "1.15.9"
