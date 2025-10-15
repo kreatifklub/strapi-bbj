@@ -433,7 +433,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     systemId: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
-    thumbnail: Schema.Attribute.Media<'images', true>;
+    thumbnail: Schema.Attribute.Media<'images'>;
     tiles: Schema.Attribute.Component<'category.card-tile', true>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
