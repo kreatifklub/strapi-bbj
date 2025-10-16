@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_general_illustration_banners",
+  "info": {
+    "displayName": "Illustration Banner",
+    "icon": "brush"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "illustration": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_general_products_carousels",
+  "info": {
+    "displayName": "Products Carousel",
+    "icon": "stack"
+  },
+  "options": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_general_ctas",
+  "info": {
+    "displayName": "CTA",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

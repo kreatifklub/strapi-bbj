@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_general_collection_tiles",
+  "info": {
+    "displayName": "Collection Tiles",
+    "icon": "brush"
+  },
+  "options": {},
+  "attributes": {
+    "Tiles": {
+      "type": "component",
+      "component": "category.card-tile",
+      "repeatable": true,
+      "max": 2
+    }
+  },
+  "config": {}
+}

@@ -22,6 +22,10 @@
       "allowedTypes": [
         "videos"
       ]
+    },
+    "middle": {
+      "type": "boolean",
+      "default": false
     }
   },
   "config": {}

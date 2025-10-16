@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_category_card_supports",
+  "info": {
+    "displayName": "Card - Support",
+    "icon": "information"
+  },
+  "options": {},
+  "attributes": {
+    "healdine": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  },
+  "config": {}
+}

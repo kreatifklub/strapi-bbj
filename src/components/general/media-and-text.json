@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_general_media_and_texts",
+  "info": {
+    "displayName": "Media & Text",
+    "icon": "brush"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "text": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

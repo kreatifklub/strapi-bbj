@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_general_faqs",
+  "info": {
+    "displayName": "FAQ",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "category.card-faq",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

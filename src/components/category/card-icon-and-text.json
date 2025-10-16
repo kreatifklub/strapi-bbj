@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_category_card_icon_and_texts",
+  "info": {
+    "displayName": "Card - Icon & Text",
+    "icon": "information"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

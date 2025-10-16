@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_general_collection_grids",
+  "info": {
+    "displayName": "Collection Grid",
+    "icon": "brush"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "Tiles": {
+      "type": "component",
+      "component": "category.card-tile",
+      "repeatable": true,
+      "max": 3
+    }
+  },
+  "config": {}
+}

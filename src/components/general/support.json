@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_general_supports",
+  "info": {
+    "displayName": "Support",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "Items": {
+      "type": "component",
+      "component": "category.card-support",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

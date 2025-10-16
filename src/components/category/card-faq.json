@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_category_card_faqs",
+  "info": {
+    "displayName": "Card - FAQ",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "collapsed": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}
