@@ -395,7 +395,13 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
       'api::category.category'
     > &
       Schema.Attribute.Private;
-    long_description: Schema.Attribute.RichText;
+    long_description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'BBJ Configuaration';
+        }
+      >;
     product_gallery: Schema.Attribute.Media<'images', true>;
     products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
@@ -601,7 +607,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
         {
-          preset: 'defaultHtml';
+          preset: 'BBJ Configuaration';
         }
       >;
     banner: Schema.Attribute.Component<'general.collection-banner', false>;
@@ -609,7 +615,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
         {
-          preset: 'defaultHtml';
+          preset: 'BBJ Configuaration';
         }
       >;
     category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
@@ -632,7 +638,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
         {
-          preset: 'defaultHtml';
+          preset: 'BBJ Configuaration';
         }
       >;
     metadata: Schema.Attribute.JSON;
@@ -645,7 +651,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
         {
-          preset: 'defaultHtml';
+          preset: 'BBJ Configuaration';
         }
       >;
     slug: Schema.Attribute.UID<'title'>;

@@ -11,7 +11,7 @@ export interface CategoryCardFaq extends Struct.ComponentSchema {
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
         {
-          preset: 'defaultHtml';
+          preset: 'BBJ Configuaration';
         }
       >;
     collapsed: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
@@ -68,7 +68,7 @@ export interface GeneralAbout extends Struct.ComponentSchema {
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
         {
-          preset: 'defaultHtml';
+          preset: 'BBJ Configuaration';
         }
       >;
     headline: Schema.Attribute.String;
@@ -194,7 +194,7 @@ export interface GeneralMediaAndText extends Struct.ComponentSchema {
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
         {
-          preset: 'defaultHtml';
+          preset: 'BBJ Configuaration';
         }
       >;
   };
