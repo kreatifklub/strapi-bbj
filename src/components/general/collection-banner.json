@@ -28,6 +28,11 @@
       "allowedTypes": [
         "videos"
       ]
+    },
+    "link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
     }
   },
   "config": {}

@@ -89,6 +89,7 @@ export interface GeneralCollectionBanner extends Struct.ComponentSchema {
     headline: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     label: Schema.Attribute.String;
+    link: Schema.Attribute.Relation<'oneToOne', 'api::category.category'>;
     video: Schema.Attribute.Media<'videos'>;
   };
 }
