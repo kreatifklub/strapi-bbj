@@ -175,7 +175,7 @@ export interface GeneralIllustration extends Struct.ComponentSchema {
   };
   attributes: {
     headline: Schema.Attribute.String;
-    iamge: Schema.Attribute.Media<'images'>;
+    image: Schema.Attribute.Media<'images'>;
     label: Schema.Attribute.String;
   };
 }

@@ -12,7 +12,7 @@
     "headline": {
       "type": "string"
     },
-    "iamge": {
+    "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
