@@ -473,7 +473,6 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'general.products-carousel',
         'general.page-banner',
         'general.media-banner',
-        'general.illustration-banner',
         'general.hero',
         'general.collection-banner',
         'general.support',
@@ -484,6 +483,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'general.collection-tiles',
         'general.collection-grid',
         'general.about',
+        'general.illustration',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
@@ -521,7 +521,6 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'general.products-carousel',
         'general.page-banner',
         'general.media-banner',
-        'general.illustration-banner',
         'general.hero',
         'general.collection-banner',
         'general.support',
@@ -532,6 +531,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'general.collection-tiles',
         'general.collection-grid',
         'general.about',
+        'general.illustration',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;

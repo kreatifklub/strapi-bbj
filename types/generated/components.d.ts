@@ -167,15 +167,15 @@ export interface GeneralHero extends Struct.ComponentSchema {
   };
 }
 
-export interface GeneralIllustrationBanner extends Struct.ComponentSchema {
-  collectionName: 'components_general_illustration_banners';
+export interface GeneralIllustration extends Struct.ComponentSchema {
+  collectionName: 'components_general_illustrations';
   info: {
-    displayName: 'Illustration Banner';
+    displayName: 'Illustration';
     icon: 'brush';
   };
   attributes: {
     headline: Schema.Attribute.String;
-    illustration: Schema.Attribute.Media<'images'>;
+    iamge: Schema.Attribute.Media<'images'>;
     label: Schema.Attribute.String;
   };
 }
@@ -328,7 +328,7 @@ declare module '@strapi/strapi' {
       'general.cta': GeneralCta;
       'general.faq': GeneralFaq;
       'general.hero': GeneralHero;
-      'general.illustration-banner': GeneralIllustrationBanner;
+      'general.illustration': GeneralIllustration;
       'general.media-and-text': GeneralMediaAndText;
       'general.media-banner': GeneralMediaBanner;
       'general.page-banner': GeneralPageBanner;

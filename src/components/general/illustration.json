@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_general_illustration_banners",
+  "collectionName": "components_general_illustrations",
   "info": {
-    "displayName": "Illustration Banner",
+    "displayName": "Illustration",
     "icon": "brush"
   },
   "options": {},
@@ -12,7 +12,7 @@
     "headline": {
       "type": "string"
     },
-    "illustration": {
+    "iamge": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
