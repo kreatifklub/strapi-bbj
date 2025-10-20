@@ -23,7 +23,7 @@
     "handle": {
       "type": "string"
     },
-    "Builder": {
+    "builder": {
       "type": "dynamiczone",
       "components": [
         "general.products-carousel",

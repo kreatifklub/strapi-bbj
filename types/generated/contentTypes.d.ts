@@ -468,7 +468,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Builder: Schema.Attribute.DynamicZone<
+    builder: Schema.Attribute.DynamicZone<
       [
         'general.products-carousel',
         'general.page-banner',
@@ -516,7 +516,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Builder: Schema.Attribute.DynamicZone<
+    builder: Schema.Attribute.DynamicZone<
       [
         'general.products-carousel',
         'general.page-banner',
