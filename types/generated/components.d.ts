@@ -101,7 +101,7 @@ export interface GeneralCollectionGrid extends Struct.ComponentSchema {
   };
   attributes: {
     headline: Schema.Attribute.String;
-    Tiles: Schema.Attribute.Component<'category.card-tile', true> &
+    tiles: Schema.Attribute.Component<'category.card-tile', true> &
       Schema.Attribute.SetMinMax<
         {
           max: 3;
@@ -118,7 +118,7 @@ export interface GeneralCollectionTiles extends Struct.ComponentSchema {
     icon: 'brush';
   };
   attributes: {
-    Tiles: Schema.Attribute.Component<'category.card-tile', true> &
+    tiles: Schema.Attribute.Component<'category.card-tile', true> &
       Schema.Attribute.SetMinMax<
         {
           max: 2;

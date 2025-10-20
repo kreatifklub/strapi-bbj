@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "Tiles": {
+    "tiles": {
       "type": "component",
       "component": "category.card-tile",
       "repeatable": true,
