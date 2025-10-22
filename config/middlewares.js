@@ -5,10 +5,20 @@ module.exports = [
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
-  'strapi::body',
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
+  {
+    name: 'strapi::body',
+    config: {
+      formLimit: '75mb',   // increase form size
+      jsonLimit: '75mb',   // increase JSON body size
+      textLimit: '75mb',
+      formidable: {
+        maxFileSize: 75 * 1024 * 1024, // 75MB
+      },
+    },
+  },
   {
     name: 'strapi::security',
     config: {
