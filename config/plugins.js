@@ -9,6 +9,7 @@ module.exports = ({ env }) => ({
   },
   upload: {
     config: {
+      sizeLimit: 75 * 1024 * 1024,
       provider: '@nexide/strapi-provider-bunny',
       providerOptions: {
         api_key: env('BUNNY_API_KEY'),
