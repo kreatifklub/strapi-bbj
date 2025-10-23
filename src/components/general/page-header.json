@@ -14,6 +14,12 @@
     },
     "description": {
       "type": "text"
+    },
+    "icons": {
+      "type": "component",
+      "component": "category.card-icon-and-text",
+      "repeatable": true,
+      "max": 5
     }
   },
   "config": {}

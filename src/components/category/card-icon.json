@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_category_card_icons",
+  "info": {
+    "displayName": "Card - Icon",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

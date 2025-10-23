@@ -19,6 +19,18 @@ export interface CategoryCardFaq extends Struct.ComponentSchema {
   };
 }
 
+export interface CategoryCardIcon extends Struct.ComponentSchema {
+  collectionName: 'components_category_card_icons';
+  info: {
+    displayName: 'Card - Icon';
+    icon: 'bulletList';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images'>;
+    label: Schema.Attribute.String;
+  };
+}
+
 export interface CategoryCardIconAndText extends Struct.ComponentSchema {
   collectionName: 'components_category_card_icon_and_texts';
   info: {
@@ -237,6 +249,13 @@ export interface GeneralPageHeader extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     headline: Schema.Attribute.String;
+    icons: Schema.Attribute.Component<'category.card-icon-and-text', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 5;
+        },
+        number
+      >;
     label: Schema.Attribute.String;
   };
 }
@@ -318,6 +337,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'category.card-faq': CategoryCardFaq;
+      'category.card-icon': CategoryCardIcon;
       'category.card-icon-and-text': CategoryCardIconAndText;
       'category.card-support': CategoryCardSupport;
       'category.card-tile': CategoryCardTile;
