@@ -289,7 +289,7 @@ export interface GeneralSupport extends Struct.ComponentSchema {
     icon: 'briefcase';
   };
   attributes: {
-    Items: Schema.Attribute.Component<'category.card-support', true>;
+    items: Schema.Attribute.Component<'category.card-support', true>;
   };
 }
 
