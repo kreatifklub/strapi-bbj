@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "Text": {
+    "text": {
       "type": "customField",
       "customField": "plugin::ckeditor5.CKEditor",
       "options": {

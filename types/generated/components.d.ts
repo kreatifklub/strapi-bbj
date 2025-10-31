@@ -300,7 +300,7 @@ export interface GeneralText extends Struct.ComponentSchema {
     icon: 'book';
   };
   attributes: {
-    Text: Schema.Attribute.RichText &
+    text: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
         {
