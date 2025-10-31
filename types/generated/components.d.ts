@@ -164,6 +164,17 @@ export interface GeneralFaq extends Struct.ComponentSchema {
   };
 }
 
+export interface GeneralFaqGroup extends Struct.ComponentSchema {
+  collectionName: 'components_general_faq_groups';
+  info: {
+    displayName: 'FAQ Group';
+    icon: 'bulletList';
+  };
+  attributes: {
+    Groups: Schema.Attribute.Component<'general.faq', true>;
+  };
+}
+
 export interface GeneralHero extends Struct.ComponentSchema {
   collectionName: 'components_general_heroes';
   info: {
@@ -364,6 +375,7 @@ declare module '@strapi/strapi' {
       'general.collection-tiles': GeneralCollectionTiles;
       'general.cta': GeneralCta;
       'general.faq': GeneralFaq;
+      'general.faq-group': GeneralFaqGroup;
       'general.hero': GeneralHero;
       'general.illustration': GeneralIllustration;
       'general.media-and-text': GeneralMediaAndText;

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_general_faq_groups",
+  "info": {
+    "displayName": "FAQ Group",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "Groups": {
+      "type": "component",
+      "component": "general.faq",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
