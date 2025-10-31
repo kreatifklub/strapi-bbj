@@ -282,6 +282,23 @@ export interface GeneralSupport extends Struct.ComponentSchema {
   };
 }
 
+export interface GeneralText extends Struct.ComponentSchema {
+  collectionName: 'components_general_texts';
+  info: {
+    displayName: 'Text';
+    icon: 'book';
+  };
+  attributes: {
+    Text: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'BBJ Configuaration';
+        }
+      >;
+  };
+}
+
 export interface SharedOpenGraph extends Struct.ComponentSchema {
   collectionName: 'components_shared_open_graphs';
   info: {
@@ -355,6 +372,7 @@ declare module '@strapi/strapi' {
       'general.page-header': GeneralPageHeader;
       'general.products-carousel': GeneralProductsCarousel;
       'general.support': GeneralSupport;
+      'general.text': GeneralText;
       'shared.open-graph': SharedOpenGraph;
       'shared.seo': SharedSeo;
     }

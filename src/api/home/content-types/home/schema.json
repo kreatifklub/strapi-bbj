@@ -39,7 +39,8 @@
         "general.collection-tiles",
         "general.collection-grid",
         "general.about",
-        "general.illustration"
+        "general.illustration",
+        "general.text"
       ]
     },
     "seo": {

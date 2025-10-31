@@ -564,6 +564,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'general.collection-grid',
         'general.about',
         'general.illustration',
+        'general.text',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
@@ -640,6 +641,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'general.collection-grid',
         'general.about',
         'general.illustration',
+        'general.text',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
