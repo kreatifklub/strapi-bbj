@@ -51,7 +51,7 @@ export interface CategoryCardSupport extends Struct.ComponentSchema {
   };
   attributes: {
     email: Schema.Attribute.Email;
-    healdine: Schema.Attribute.String;
+    headline: Schema.Attribute.String;
   };
 }
 
