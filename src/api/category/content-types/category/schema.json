@@ -52,11 +52,6 @@
         "images"
       ]
     },
-    "seo": {
-      "type": "component",
-      "component": "shared.seo",
-      "repeatable": false
-    },
     "products": {
       "type": "relation",
       "relation": "oneToMany",
@@ -66,7 +61,13 @@
     "tiles": {
       "type": "component",
       "component": "category.card-tile",
-      "repeatable": true
+      "repeatable": true,
+      "max": 2
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

@@ -60,6 +60,12 @@
       "target": "api::product.product",
       "mappedBy": "collection"
     },
+    "tiles": {
+      "type": "component",
+      "component": "category.card-tile",
+      "repeatable": true,
+      "max": 2
+    },
     "seo": {
       "type": "component",
       "component": "shared.seo",
