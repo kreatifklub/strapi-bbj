@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "Groups": {
+    "groups": {
       "type": "component",
       "component": "general.faq",
       "repeatable": true

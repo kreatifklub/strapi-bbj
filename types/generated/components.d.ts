@@ -171,7 +171,7 @@ export interface GeneralFaqGroup extends Struct.ComponentSchema {
     icon: 'bulletList';
   };
   attributes: {
-    Groups: Schema.Attribute.Component<'general.faq', true>;
+    groups: Schema.Attribute.Component<'general.faq', true>;
   };
 }
 
