@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_additional_links",
+  "info": {
+    "displayName": "links",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "customField",
+      "customField": "plugin::link-field.link-field"
+    }
+  },
+  "config": {}
+}

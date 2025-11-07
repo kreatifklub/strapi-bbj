@@ -4,6 +4,25 @@ module.exports = ({ env }) => ({
       jwtSecret: env("JWT_SECRET"),
     },
   },
+  'link-field': {
+    enabled: true,
+    config: {
+      relations: {
+        'api::page.page': {
+          urlTemplate: '/{slug}',
+        },
+        'api::category.category': {
+          urlTemplate: '/categories/{slug}',
+        },
+        'api::collection.collection': {
+          urlTemplate: '/collections/{slug}',
+        },
+        "api::product.product": {
+          urlTemplate: '/product/{slug}',
+        }
+      },
+    },
+  },
   seo: {
     enabled: true,
   },

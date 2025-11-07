@@ -18,6 +18,10 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "links": {
+      "type": "customField",
+      "customField": "plugin::link-field.link-field"
     }
   },
   "config": {}

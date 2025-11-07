@@ -8,6 +8,15 @@
   "attributes": {
     "headline": {
       "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "component": "additional.links",
+      "repeatable": true
+    },
+    "button_style": {
+      "type": "boolean",
+      "default": false
     }
   },
   "config": {}

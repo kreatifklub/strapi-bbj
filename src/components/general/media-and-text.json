@@ -29,6 +29,10 @@
     "reverse": {
       "type": "boolean",
       "default": false
+    },
+    "links": {
+      "type": "customField",
+      "customField": "plugin::link-field.link-field"
     }
   },
   "config": {}

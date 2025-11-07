@@ -1,5 +1,17 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface AdditionalLinks extends Struct.ComponentSchema {
+  collectionName: 'components_additional_links';
+  info: {
+    displayName: 'links';
+    icon: 'link';
+  };
+  attributes: {
+    link: Schema.Attribute.JSON &
+      Schema.Attribute.CustomField<'plugin::link-field.link-field'>;
+  };
+}
+
 export interface CategoryCardFaq extends Struct.ComponentSchema {
   collectionName: 'components_category_card_faqs';
   info: {
@@ -148,7 +160,9 @@ export interface GeneralCta extends Struct.ComponentSchema {
     icon: 'link';
   };
   attributes: {
+    button_style: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     headline: Schema.Attribute.String;
+    links: Schema.Attribute.Component<'additional.links', true>;
   };
 }
 
@@ -200,6 +214,8 @@ export interface GeneralIllustration extends Struct.ComponentSchema {
     headline: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     label: Schema.Attribute.String;
+    links: Schema.Attribute.JSON &
+      Schema.Attribute.CustomField<'plugin::link-field.link-field'>;
   };
 }
 
@@ -212,6 +228,8 @@ export interface GeneralMediaAndText extends Struct.ComponentSchema {
   attributes: {
     headline: Schema.Attribute.String;
     label: Schema.Attribute.String;
+    links: Schema.Attribute.JSON &
+      Schema.Attribute.CustomField<'plugin::link-field.link-field'>;
     media: Schema.Attribute.Media<'images', true>;
     reverse: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     text: Schema.Attribute.RichText &
@@ -364,6 +382,7 @@ export interface SharedSeo extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'additional.links': AdditionalLinks;
       'category.card-faq': CategoryCardFaq;
       'category.card-icon': CategoryCardIcon;
       'category.card-icon-and-text': CategoryCardIconAndText;
