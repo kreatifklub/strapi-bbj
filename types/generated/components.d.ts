@@ -211,7 +211,7 @@ export interface GeneralIllustration extends Struct.ComponentSchema {
     icon: 'brush';
   };
   attributes: {
-    headline: Schema.Attribute.String;
+    headline: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'>;
     label: Schema.Attribute.String;
     links: Schema.Attribute.JSON &
