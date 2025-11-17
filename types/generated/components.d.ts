@@ -55,6 +55,29 @@ export interface CategoryCardIconAndText extends Struct.ComponentSchema {
   };
 }
 
+export interface CategoryCardShess extends Struct.ComponentSchema {
+  collectionName: 'components_category_card_shesses';
+  info: {
+    displayName: 'Card - \u0421hess';
+    icon: 'bulletList';
+  };
+  attributes: {
+    headline: Schema.Attribute.String;
+    label: Schema.Attribute.String;
+    links: Schema.Attribute.JSON &
+      Schema.Attribute.CustomField<'plugin::link-field.link-field'>;
+    media: Schema.Attribute.Media<'images'>;
+    reverse: Schema.Attribute.Boolean;
+    text: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'BBJ Configuaration';
+        }
+      >;
+  };
+}
+
 export interface CategoryCardSupport extends Struct.ComponentSchema {
   collectionName: 'components_category_card_supports';
   info: {
@@ -99,6 +122,18 @@ export interface GeneralAbout extends Struct.ComponentSchema {
     media: Schema.Attribute.Media<'images'>;
     name: Schema.Attribute.String;
     position: Schema.Attribute.String;
+  };
+}
+
+export interface GeneralChessMedias extends Struct.ComponentSchema {
+  collectionName: 'components_general_chess_medias';
+  info: {
+    displayName: 'Chess Medias';
+    icon: 'bulletList';
+  };
+  attributes: {
+    headline: Schema.Attribute.Text;
+    items: Schema.Attribute.Component<'category.card-shess', true>;
   };
 }
 
@@ -239,6 +274,7 @@ export interface GeneralMediaAndText extends Struct.ComponentSchema {
           preset: 'BBJ Configuaration';
         }
       >;
+    video: Schema.Attribute.Media<'videos'>;
   };
 }
 
@@ -386,9 +422,11 @@ declare module '@strapi/strapi' {
       'category.card-faq': CategoryCardFaq;
       'category.card-icon': CategoryCardIcon;
       'category.card-icon-and-text': CategoryCardIconAndText;
+      'category.card-shess': CategoryCardShess;
       'category.card-support': CategoryCardSupport;
       'category.card-tile': CategoryCardTile;
       'general.about': GeneralAbout;
+      'general.chess-medias': GeneralChessMedias;
       'general.collection-banner': GeneralCollectionBanner;
       'general.collection-grid': GeneralCollectionGrid;
       'general.collection-tiles': GeneralCollectionTiles;

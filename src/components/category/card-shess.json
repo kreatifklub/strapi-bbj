@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_general_media_and_texts",
+  "collectionName": "components_category_card_shesses",
   "info": {
-    "displayName": "Media & Text",
-    "icon": "brush"
+    "displayName": "Card - Сhess",
+    "icon": "bulletList"
   },
   "options": {},
   "attributes": {
@@ -21,21 +21,13 @@
     },
     "media": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images"
       ]
     },
-    "video": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "videos"
-      ]
-    },
     "reverse": {
-      "type": "boolean",
-      "default": false
+      "type": "boolean"
     },
     "links": {
       "type": "customField",

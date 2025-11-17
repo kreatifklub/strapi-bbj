@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_general_chess_medias",
+  "info": {
+    "displayName": "Chess Medias",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "component": "category.card-shess",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
