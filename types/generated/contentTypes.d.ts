@@ -566,6 +566,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'general.illustration',
         'general.text',
         'general.faq-group',
+        'general.chess-medias',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
@@ -644,6 +645,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'general.illustration',
         'general.text',
         'general.faq-group',
+        'general.chess-medias',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
