@@ -75,6 +75,7 @@ export interface CategoryCardShess extends Struct.ComponentSchema {
           preset: 'BBJ Configuaration';
         }
       >;
+    video: Schema.Attribute.Media<'videos'>;
   };
 }
 

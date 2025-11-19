@@ -26,6 +26,13 @@
         "images"
       ]
     },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
     "reverse": {
       "type": "boolean"
     },
