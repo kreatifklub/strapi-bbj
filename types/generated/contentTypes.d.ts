@@ -537,6 +537,56 @@ export interface ApiCollectionCollection extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiErrorPageErrorPage extends Struct.SingleTypeSchema {
+  collectionName: 'error_pages';
+  info: {
+    displayName: 'Error Page';
+    pluralName: 'error-pages';
+    singularName: 'error-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    builder: Schema.Attribute.DynamicZone<
+      [
+        'general.text',
+        'general.support',
+        'general.products-carousel',
+        'general.page-header',
+        'general.page-banner',
+        'general.media-banner',
+        'general.media-and-text',
+        'general.illustration',
+        'general.hero',
+        'general.faq',
+        'general.faq-group',
+        'general.cta',
+        'general.collection-tiles',
+        'general.collection-grid',
+        'general.collection-banner',
+        'general.chess-medias',
+        'general.about',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::error-page.error-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'title'>;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHomeHome extends Struct.SingleTypeSchema {
   collectionName: 'homes';
   info: {
@@ -1518,6 +1568,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::category.category': ApiCategoryCategory;
       'api::collection.collection': ApiCollectionCollection;
+      'api::error-page.error-page': ApiErrorPageErrorPage;
       'api::home.home': ApiHomeHome;
       'api::login.login': ApiLoginLogin;
       'api::page.page': ApiPagePage;
