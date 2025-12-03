@@ -9,6 +9,9 @@
     "headline": {
       "type": "text"
     },
+    "description": {
+      "type": "text"
+    },
     "image": {
       "type": "media",
       "multiple": false,

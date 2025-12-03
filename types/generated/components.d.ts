@@ -299,6 +299,7 @@ export interface GeneralPageBanner extends Struct.ComponentSchema {
     icon: 'brush';
   };
   attributes: {
+    description: Schema.Attribute.Text;
     headline: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'>;
     middle: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
